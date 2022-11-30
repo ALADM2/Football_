@@ -4,7 +4,7 @@ import { Alert, Button, Form, FormGroup, Input } from 'reactstrap'
 import { Navigate } from 'react-router-dom'
 
 const RegisterForm = (props) => {
-  const BASE_URL = 'https://id607001-aladm1.herokuapp.com'
+  const BASE_URL = 'https://silver-vacherin-51d712.netlify.app'
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')

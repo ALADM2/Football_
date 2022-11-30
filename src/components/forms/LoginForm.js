@@ -9,7 +9,7 @@ import { Navigate } from 'react-router-dom'
  * @returns Login form
  */
 const LoginForm = (props) => {
-  const BASE_URL = 'https://id607001-aladm1.herokuapp.com'
+  const BASE_URL = 'https://silver-vacherin-51d712.netlify.app'
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
