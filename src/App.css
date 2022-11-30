@@ -1,0 +1,12 @@
+.welcome{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome>h1{
+  border: solid black;
+  padding: 50px;
+}
+

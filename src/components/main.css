@@ -1,0 +1,25 @@
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.page-link{
+    cursor: pointer;
+}
+
+
+.dropdown-content{
+    width: 100%;
+    background-color: rgb(181, 200, 255);
+    padding: 8px;
+    font-size: 16px;
+    border: solid rgb(222, 222, 222);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content:hover{
+    border: solid black;
+}
+
