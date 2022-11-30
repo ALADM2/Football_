@@ -1,3 +1,4 @@
 # Redirects from what the browser requests to what we serve
 /*    /index.html   200
+/api/*  https://silver-vacherin-51d712.netlify.app/:splat  200
 
