@@ -1,5 +1,5 @@
 # Redirects from what the browser requests to what we serve
-https://joyful-kangaroo-6f0300.netlify.app/*  https://silver-vacherin-51d712.netlify.app/:splat  200
+/https://joyful-kangaroo-6f0300.netlify.app/*  https://silver-vacherin-51d712.netlify.app/:splat  200
 /*    /index.html   200
 
 
