@@ -9,7 +9,7 @@ import { Navigate } from 'react-router-dom'
  * @returns Login form
  */
 const LoginForm = (props) => {
-  const BASE_URL = 'https://silver-vacherin-51d712.netlify.app'
+  const BASE_URL = 'https://footballdataserver.onrender.com'
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')

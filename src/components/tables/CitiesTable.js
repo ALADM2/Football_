@@ -11,7 +11,7 @@ import '../main.css'
  * @returns Cities table
  */
 const CitiesTable = (props) => {
-  const BASE_URL = 'https://id607001-aladm1.herokuapp.com'
+  const BASE_URL = 'https://footballdataserver.onrender.com'
 
   const [currentPage, setCurrentPage] = useState(1)      /**Set initial page to 1 */
   const [entriesPerPage, setEntriesPerPage] = useState(5)/**Limit to 5 items per page */

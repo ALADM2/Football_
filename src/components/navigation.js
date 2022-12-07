@@ -25,7 +25,7 @@ import TeamsTable from './tables/TeamsTable'
  * @returns navigation component
  */
 const Navigation = (props) => {
-  const BASE_URL = 'https://silver-vacherin-51d712.netlify.app';
+  const BASE_URL = 'https://footballdataserver.onrender.com/';
 
   const [isOpen, setIsOpen] = useState(false)
   const [isLoggedIn, setIsLoggedIn] = useState(

@@ -8,7 +8,7 @@ import axios from 'axios'
  * @returns New country or edited
  */
 const AddEditCountry = (props) => {
-  const BASE_URL = 'https://id607001-aladm1.herokuapp.com'
+  const BASE_URL = 'https://footballdataserver.onrender.com'
   const [nameError, setNameError] = useState(false) // Used for name errors
   const [populationError, setPopulationError] = useState(false) // Used for population errors
   const [continentError, setContinentError] = useState(false) // Used for continent errors

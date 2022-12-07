@@ -8,7 +8,7 @@ import axios from 'axios'
  * @returns New team or edited
  */
 const AddEditTeam = (props) => {
-  const BASE_URL = 'https://id607001-aladm1.herokuapp.com'
+  const BASE_URL = 'https://footballdataserver.onrender.com'
   const [nameError, setNameError] = useState(false) // Used for name errors
   const [stadiumError, setStadiumError] = useState(false) // Used for stadium errors
   const [unknownError, setUnknownError] = useState(false) // Used for network errors
