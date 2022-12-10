@@ -11,6 +11,7 @@ import { Navigate } from 'react-router-dom'
 const LoginForm = (props) => {
   const BASE_URL = 'https://footballdataserver.onrender.com'
 
+  const [isLoading, setIsLoading] = useState(false);
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isHome, setIsHome] = useState(false)
@@ -23,6 +24,7 @@ const LoginForm = (props) => {
   const loginUser = async () => {
     setAuthError(false)
     setUnknownError(false)
+    setIsLoading(true)
 
     try {
       const res = await axios.post(`${BASE_URL}/api/v1/login`, {
@@ -44,6 +46,7 @@ const LoginForm = (props) => {
         setUnknownError(true)
       }
     }
+    setIsLoading(false);
   }
 
   /**Submit event. Login user */
@@ -108,6 +111,7 @@ const LoginForm = (props) => {
           </Alert>
         ) : null}
         <Button className='button' color="success">Submit</Button>
+        {isLoading ? <h2>Loading...</h2> : <></>}
       </Form>
     </>
   )

@@ -6,6 +6,7 @@ import { Navigate } from 'react-router-dom'
 const RegisterForm = (props) => {
   const BASE_URL = 'https://footballdataserver.onrender.com'
 
+  const [isLoading, setIsLoading] = useState(false);
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -25,6 +26,7 @@ const RegisterForm = (props) => {
     setNameError(false)
     setEmailError(false)
     setPasswordError(false)
+    setIsLoading(true)
 
     try {
       /**Regal expression to make sure 'email' has the correct format */
@@ -72,6 +74,7 @@ const RegisterForm = (props) => {
         setUnknownError(true)
       }
     }
+    setIsLoading(false)
   }
 /**
  * Submit event. Register user.
@@ -163,6 +166,7 @@ const RegisterForm = (props) => {
           </Alert>
         ) : null}
         <Button className='button' color="success">Submit</Button>
+        {isLoading ? <h2>Loading...</h2> : <></>}
       </Form>
     </>
   )
