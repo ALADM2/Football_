@@ -68,20 +68,20 @@ const Navigation = (props) => {
   const authLink = isLoggedIn ? (
     <>
       <NavItem>
-        <NavLink href="/countries">Countries</NavLink>
+        <NavLink href="/countries" style={{ marginLeft: '20px' }}>Countries</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/cities">Cities</NavLink>
+        <NavLink href="/cities" style={{ marginLeft: '20px' }}>Cities</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/teams">Teams</NavLink>
+        <NavLink href="/teams" style={{ marginRight: '100px', marginLeft: '20px' }}>Teams</NavLink>
       </NavItem>
       <NavItem>
         <Button
           to="/"
           onClick={logout}
           color="primary"
-          style={{ float: 'left', marginRight: '10px', marginLeft: '50px' }}
+          style={{ float: 'left', marginRight: '10px' }}
         >
           Logout
         </Button>
