@@ -44,7 +44,7 @@ const Navigation = (props) => {
   /**Logout user */
   const logout = async () => {
     try {
-      const res = await axios.post(`${BASE_URL}api/v1/logout`, {
+      const res = await axios.post(`${BASE_URL}/api/v1/logout`, {
         headers: {
           Authorization: `Bearer ${sessionStorage.getItem('token')}`,
         },
