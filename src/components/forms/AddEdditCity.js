@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Alert, Button, Form, FormGroup, Label, Input } from 'reactstrap'
 import axios from 'axios'
+import { BASE_URL } from '../../utils/backendURL'
 
 /**
  * 
@@ -8,7 +9,6 @@ import axios from 'axios'
  * @returns New city or edited
  */
 const AddEditCity = (props) => {
-  const BASE_URL = 'https://footballdataserver.onrender.com'
   const [nameError, setNameError] = useState(false) // Used for name errors
   const [populationError, setPopulationError] = useState(false) // Used for population errors
   const [climateError, setClimateError] = useState(false) // Used for climate errors

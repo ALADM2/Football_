@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import { Alert, Button, Form, FormGroup, Input } from 'reactstrap'
 import { Navigate } from 'react-router-dom'
+import { BASE_URL } from '../../utils/backendURL'
 
 /**
  * 
@@ -9,7 +10,6 @@ import { Navigate } from 'react-router-dom'
  * @returns Login form
  */
 const LoginForm = (props) => {
-  const BASE_URL = 'https://footballdataserver.onrender.com'
 
   const [isLoading, setIsLoading] = useState(false);
   const [email, setEmail] = useState('')

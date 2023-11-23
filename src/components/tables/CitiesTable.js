@@ -4,6 +4,7 @@ import { Table, Button } from 'reactstrap'
 import ModalForm from '../modals/Modal'
 import Pagination from '../Pagination'
 import '../main.css'
+import { BASE_URL } from '../../utils/backendURL'
 
 /**
  * 
@@ -11,7 +12,6 @@ import '../main.css'
  * @returns Cities table
  */
 const CitiesTable = (props) => {
-  const BASE_URL = 'https://footballdataserver.onrender.com'
 
   const [currentPage, setCurrentPage] = useState(1)      /**Set initial page to 1 */
   const [entriesPerPage, setEntriesPerPage] = useState(5)/**Limit to 5 items per page */

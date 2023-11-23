@@ -18,6 +18,7 @@ import RegisterForm from './forms/RegisterForm'
 import CountriesTable from './tables/CountriesTable'
 import CitiesTable from './tables/CitiesTable'
 import TeamsTable from './tables/TeamsTable'
+import { BASE_URL } from '../utils/backendURL'
 
 /**
  * 
@@ -25,7 +26,6 @@ import TeamsTable from './tables/TeamsTable'
  * @returns navigation component
  */
 const Navigation = (props) => {
-  const BASE_URL = 'https://footballdataserver.onrender.com/';
 
   const [isOpen, setIsOpen] = useState(false)
   const [isLoggedIn, setIsLoggedIn] = useState(
